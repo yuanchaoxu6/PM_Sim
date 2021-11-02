@@ -1,0 +1,16 @@
+    53.44 GFLOPs
+
+  6029.26 Weight
+
+   855.07 DRAM
+
+META_DATA
+ERT_VERSION  1.1.0
+HOSTNAME  ('pmemMachine1', ['pmemMachine1.local'], ['fe80::5210:541c:37bc:6d9c'])
+CONFIG  {'ERT_WORKING_SET_MIN': ['1'], 'ERT_CFLAGS': ['-O3'], 'ERT_CC': ['gcc'], 'ERT_OPENMP_LDFLAGS': ['-fopenmp'], 'ERT_MEMORY_MAX': ['1073741824'], 'ERT_LDFLAGS': [], 'ERT_LDLIBS': [], 'ERT_SPEC_GBYTES_DRAM': ['300'], 'ERT_RUN': ['export', 'KMP_AFFINITY=scatter;', 'export', 'OMP_NUM_THREADS=ERT_OPENMP_THREADS;', 'ERT_CODE'], 'ERT_FLOPS': ['1,2,4,8,16'], 'ERT_OPENMP_CFLAGS': ['-fopenmp'], 'ERT_SPEC_GFLOPS': ['1000'], 'ERT_MPI': [False], 'ERT_TRIALS_MIN': ['1'], 'ERT_DRIVER': ['driver1'], 'ERT_RESULTS': ['Results.madonna.lbl.gov.02'], 'ERT_OPENMP': ['True'], 'ERT_OPENMP_THREADS': ['1,2,4,8,16,32,48,64,80,96,112,128,144,160'], 'ERT_KERNEL': ['kernel1'], 'ERT_GPU': [False], 'ERT_LD': ['gcc'], 'ERT_NUM_EXPERIMENTS': ['3'], 'ERT_ALIGN': ['32'], 'ERT_GNUPLOT': ['gnuplot']}
+OPENMP_THREADS 128
+TIMESTAMP_DATA  1634056378.93
+FLOPS          1
+UNAME  ('Linux', 'pmemMachine1', '5.9.13-derrick-pmo', '#95 SMP Sat Sep 18 09:17:02 EDT 2021', 'x86_64', 'x86_64')
+TIMESTAMP_DATA  1634056382.71
+TIMESTAMP_DATA  1634056375.76
