@@ -51,7 +51,7 @@ void kernel(uint64_t nsize,
   uint64_t i, j;
   for (j = 0; j < nsize/blocksize; j++) {
 	  memcpy(&A[j*nthreads*blocksize],&B[0],blocksize*8);
-	  msync(&A[j*nthreads*blocksize], blocksize*sizeof(double), MS_SYNC);
+	  //msync(&A[j*nthreads*blocksize], blocksize*sizeof(double), MS_SYNC);
   }
 }
 double getTime()
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
 			B[i] = i*i*1.0/rand();
 		
 		int fd;
- 		if ( (fd = open("/mnt/tmpfsts/f", O_RDWR|O_CREAT, 0666)) < 0){
+ 		if ( (fd = open("/mnt/daxtest/f", O_RDWR|O_CREAT, 0666)) < 0){
   			printf("open file wrong!\n");
   			exit(1);
  		}
@@ -117,7 +117,7 @@ int main(int argc, char *argv[]) {
 
 				int it = 0;
 				n = nsize; t = 1;
-				while (it < 30) { // working set - nsize
+				while (it < 20) { // working set - nsize
 						
 				#pragma omp barrier
 

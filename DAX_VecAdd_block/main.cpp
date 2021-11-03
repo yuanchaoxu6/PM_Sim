@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
 				fprintf(stderr, "Out of memory!\n");
 				return -1;
 		}
-#pragma omp parallel private(id) num_threads(1)
+#pragma omp parallel private(id) num_threads(160)
 //#pragma omp parallel private(id) 
 		{
 				id = omp_get_thread_num();
@@ -122,7 +122,7 @@ int main(int argc, char *argv[]) {
 								}
 								// C-code
 								kernel(n, t, &buf[nid], &bytes_per_elem, &mem_accesses_per_elem);
-								msync(&buf[nid], n*sizeof(double), MS_SYNC);
+								//msync(&buf[nid], n*sizeof(double), MS_SYNC);
 				#pragma omp barrier
 
 								if ((id == 0) && (rank == 0)) {

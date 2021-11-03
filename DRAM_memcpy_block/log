@@ -1,0 +1,1000 @@
+  118  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  119  sudo vi /etc/default/grub 
+  120  ls
+  121  umount /mnt/tmpfstest/
+  122  ls /mnt
+  123  sudo vi /etc/default/grub 
+  124  sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+  125  sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+  126  sudo reboot
+  127  ls
+  128  cd PM
+  129  ls
+  130  cd iozone3_492/src/
+  131  ls
+  132  cd current/
+  133  ls
+  134  sudo ./iozone -c -G -B -i 0 -i 1 -t 1 -F /mnt/daxtest/f
+  135  sudo /iozone -c -G -B -i 0 -i 1 -t 2 -F /mnt/daxtest/f /mnt/daxtest/f1
+  136  sudo ./iozone -c -G -B -i 0 -i 1 -t 2 -F /mnt/daxtest/f /mnt/daxtest/f1
+  137  sudo ./iozone -c -G -B -i 0 -i 1 -t 4 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3
+  138  ./iozone -c -G -B -i 0 -i 1 -t 8 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7
+  139  sudo ./iozone -c -G -B -i 0 -i 1 -t 8 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7
+  140  sudo ./iozone -c -G -B -i 0 -i 1 -t 16 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15
+  141  sudo ./iozone -c -G -B -i 0 -i 1 -t 32 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31
+  142  sudo ./iozone -c -G -B -i 0 -i 1 -t 48 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47
+  143  ./iozone -c -G -B -i 0 -i 1 -t 64 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63
+  144  sudo ./iozone -c -G -B -i 0 -i 1 -t 64 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63
+  145  sudo ./iozone -c -G -B -i 0 -i 1 -t 80 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79
+  146  sudo ./iozone -c -G -B -i 0 -i 1 -t 96 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95
+  147  sudo ../iozone -c -G -B -i 0 -i 1 -t 112 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111
+  148  sudo ./iozone -c -G -B -i 0 -i 1 -t 112 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111
+  149  sudo ./iozone -c -G -B -i 0 -i 1 -t 128 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111 /mnt/daxtest/f112 /mnt/daxtest/f113 /mnt/daxtest/f114 /mnt/daxtest/f115 /mnt/daxtest/f116 /mnt/daxtest/f117 /mnt/daxtest/f118 /mnt/daxtest/f119 /mnt/daxtest/f120 /mnt/daxtest/f121 /mnt/daxtest/f122 /mnt/daxtest/f123 /mnt/daxtest/f124 /mnt/daxtest/f125 /mnt/daxtest/f126 /mnt/daxtest/f127
+  150  sudo ./iozone -c -G -B -i 0 -i 1 -t 144 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111 /mnt/daxtest/f112 /mnt/daxtest/f113 /mnt/daxtest/f114 /mnt/daxtest/f115 /mnt/daxtest/f116 /mnt/daxtest/f117 /mnt/daxtest/f118 /mnt/daxtest/f119 /mnt/daxtest/f120 /mnt/daxtest/f121 /mnt/daxtest/f122 /mnt/daxtest/f123 /mnt/daxtest/f124 /mnt/daxtest/f125 /mnt/daxtest/f126 /mnt/daxtest/f127 /mnt/daxtest/f128 /mnt/daxtest/f129 /mnt/daxtest/f130 /mnt/daxtest/f131 /mnt/daxtest/f132 /mnt/daxtest/f133 /mnt/daxtest/f134 /mnt/daxtest/f135 /mnt/daxtest/f136 /mnt/daxtest/f137 /mnt/daxtest/f138 /mnt/daxtest/f139 /mnt/daxtest/f140 /mnt/daxtest/f141 /mnt/daxtest/f142 /mnt/daxtest/f143
+  151  sudo ./iozone -c -G -B -i 0 -i 1 -t 160 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111 /mnt/daxtest/f112 /mnt/daxtest/f113 /mnt/daxtest/f114 /mnt/daxtest/f115 /mnt/daxtest/f116 /mnt/daxtest/f117 /mnt/daxtest/f118 /mnt/daxtest/f119 /mnt/daxtest/f120 /mnt/daxtest/f121 /mnt/daxtest/f122 /mnt/daxtest/f123 /mnt/daxtest/f124 /mnt/daxtest/f125 /mnt/daxtest/f126 /mnt/daxtest/f127 /mnt/daxtest/f128 /mnt/daxtest/f129 /mnt/daxtest/f130 /mnt/daxtest/f131 /mnt/daxtest/f132 /mnt/daxtest/f133 /mnt/daxtest/f134 /mnt/daxtest/f135 /mnt/daxtest/f136 /mnt/daxtest/f137 /mnt/daxtest/f138 /mnt/daxtest/f139 /mnt/daxtest/f140 /mnt/daxtest/f141 /mnt/daxtest/f142 /mnt/daxtest/f143 /mnt/daxtest/f144 /mnt/daxtest/f145 /mnt/daxtest/f146 /mnt/daxtest/f147 /mnt/daxtest/f148 /mnt/daxtest/f149 /mnt/daxtest/f150 /mnt/daxtest/f151 /mnt/daxtest/f152 /mnt/daxtest/f153 /mnt/daxtest/f154 /mnt/daxtest/f155 /mnt/daxtest/f156 /mnt/daxtest/f157 /mnt/daxtest/f158 /mnt/daxtest/f159
+  152  ls
+  153  dmesg | grep user:
+  154  sudo rm -rf /mnt/daxtest/
+  155  sudo mkdir /mnt/daxtest
+  156  /sbin/mkfs.ext4 /dev/pmem2 
+  157  sudo /sbin/mkfs.ext4 /dev/pmem2 
+  158  sudo mount -o dax /dev/pmem2 /mnt/daxtest
+  159  fdisk -l /dev/pmem0 
+  160  sudo fdisk -l /dev/pmem0 
+  161  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  162  ls
+  163  ls -lrth
+  164  ls
+  165  cd fio/
+  166  ls
+  167  cd ..
+  168  ls
+  169  history
+  170  history > log
+  171  vi log 
+  172  who
+  173  ls
+  174  top
+  175  ls
+  176  cd PM
+  177  ls
+  178  cd iozone3_492/
+  179  ls
+  180  cd ..
+  181  ls
+  182  cd ..
+  183  ls
+  184  git clone https://github.com/axboe/fio.git
+  185  ls
+  186  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  187  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=2
+  188  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=8G count=1
+  189  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=2G count=1
+  190  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=12G count=1
+  191  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=12G count=2
+  192  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=2G count=2
+  193  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=2G count=4
+  194  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  195  ls
+  196  top
+  197  ls
+  198  mkdir /mnt/tmpfstest/f
+  199  sudo touch /mnt/tmpfstest/f
+  200  sudo dd if=/dev/zero of=/mnt/tmpfstest/f bs=4G count=4
+  201  ls
+  202  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  203  ls
+  204  cd fio/
+  205  ls
+  206  ./configure 
+  207  make
+  208  make install
+  209  sudo make install
+  210  ls
+  211  fio --name=random-write --ioengine=posixaio --rw=randwrite --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1
+  212  fio -h
+  213  fio --name=random-write --ioengine=posixaio --rw=seqwrite --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1
+  214  fio --name=random-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1
+  215  sudo fio --name=random-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 filename=/mnt/daxtest/f
+  216  sudo fio --name=random-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 filename=/mnt/daxtest/
+  217  fio -h
+  218  fio --cmdhelp=all
+  219  ls
+  220  touch f
+  221  sudo fio --name=random-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 filename=f
+  222  sudo fio --name=random-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 filename=./f
+  223  sudo fio --name=random-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 filename=/
+  224  sudo fio --name=random-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 /mnt/daxtest/f
+  225  sudo fio --name=random-write --filename=f --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 
+  226  sudo fio --name=random-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  227  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  228  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  229  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 --filename=/mnt/pmem0/f
+  230  cd 
+  231  cd ..
+  232  ls
+  233  cd ~
+  234  cd PM/iozone3_492/
+  235  ls
+  236  cd src/
+  237  ls
+  238  cd current/
+  239  ls
+  240  sudo ./iozone -c -G -B -i 0 -i 1 -t 160 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111 /mnt/daxtest/f112 /mnt/daxtest/f113 /mnt/daxtest/f114 /mnt/daxtest/f115 /mnt/daxtest/f116 /mnt/daxtest/f117 /mnt/daxtest/f118 /mnt/daxtest/f119 /mnt/daxtest/f120 /mnt/daxtest/f121 /mnt/daxtest/f122 /mnt/daxtest/f123 /mnt/daxtest/f124 /mnt/daxtest/f125 /mnt/daxtest/f126 /mnt/daxtest/f127 /mnt/daxtest/f128 /mnt/daxtest/f129 /mnt/daxtest/f130 /mnt/daxtest/f131 /mnt/daxtest/f132 /mnt/daxtest/f133 /mnt/daxtest/f134 /mnt/daxtest/f135 /mnt/daxtest/f136 /mnt/daxtest/f137 /mnt/daxtest/f138 /mnt/daxtest/f139 /mnt/daxtest/f140 /mnt/daxtest/f141 /mnt/daxtest/f142 /mnt/daxtest/f143 /mnt/daxtest/f144 /mnt/daxtest/f145 /mnt/daxtest/f146 /mnt/daxtest/f147 /mnt/daxtest/f148 /mnt/daxtest/f149 /mnt/daxtest/f150 /mnt/daxtest/f151 /mnt/daxtest/f152 /mnt/daxtest/f153 /mnt/daxtest/f154 /mnt/daxtest/f155 /mnt/daxtest/f156 /mnt/daxtest/f157 /mnt/daxtest/f158 /mnt/daxtest/f159
+  241  sudo ./iozone -c -G -B -i 0 -i 1 -t 160 -F /mnt/daxtest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111 /mnt/daxtest/f112 /mnt/daxtest/f113 /mnt/daxtest/f114 /mnt/daxtest/f115 /mnt/daxtest/f116 /mnt/daxtest/f117 /mnt/daxtest/f118 /mnt/daxtest/f119 /mnt/daxtest/f120 /mnt/daxtest/f121 /mnt/daxtest/f122 /mnt/daxtest/f123 /mnt/daxtest/f124 /mnt/daxtest/f125 /mnt/daxtest/f126 /mnt/daxtest/f127 /mnt/daxtest/f128 /mnt/daxtest/f129 /mnt/daxtest/f130 /mnt/daxtest/f131 /mnt/daxtest/f132 /mnt/daxtest/f133 /mnt/daxtest/f134 /mnt/daxtest/f135 /mnt/daxtest/f136 /mnt/daxtest/f137 /mnt/daxtest/f138 /mnt/daxtest/f139 /mnt/daxtest/f140 /mnt/daxtest/f141 /mnt/daxtest/f142 /mnt/daxtest/f143 /mnt/daxtest/f144 /mnt/daxtest/f145 /mnt/daxtest/f146 /mnt/daxtest/f147 /mnt/daxtest/f148 /mnt/daxtest/f149 /mnt/daxtest/f150 /mnt/daxtest/f151 /mnt/daxtest/f152 /mnt/daxtest/f153 /mnt/daxtest/f154 /mnt/daxtest/f155 /mnt/daxtest/f156 /mnt/daxtest/f157 /mnt/daxtest/f158 /mnt/daxtest/f159 -s 100m
+  242  sudo ./iozone -c -G -B -i 0 -i 1 -t 160 -F /mnt/tmpfstest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111 /mnt/daxtest/f112 /mnt/daxtest/f113 /mnt/daxtest/f114 /mnt/daxtest/f115 /mnt/daxtest/f116 /mnt/daxtest/f117 /mnt/daxtest/f118 /mnt/daxtest/f119 /mnt/daxtest/f120 /mnt/daxtest/f121 /mnt/daxtest/f122 /mnt/daxtest/f123 /mnt/daxtest/f124 /mnt/daxtest/f125 /mnt/daxtest/f126 /mnt/daxtest/f127 /mnt/daxtest/f128 /mnt/daxtest/f129 /mnt/daxtest/f130 /mnt/daxtest/f131 /mnt/daxtest/f132 /mnt/daxtest/f133 /mnt/daxtest/f134 /mnt/daxtest/f135 /mnt/daxtest/f136 /mnt/daxtest/f137 /mnt/daxtest/f138 /mnt/daxtest/f139 /mnt/daxtest/f140 /mnt/daxtest/f141 /mnt/daxtest/f142 /mnt/daxtest/f143 /mnt/daxtest/f144 /mnt/daxtest/f145 /mnt/daxtest/f146 /mnt/daxtest/f147 /mnt/daxtest/f148 /mnt/daxtest/f149 /mnt/daxtest/f150 /mnt/daxtest/f151 /mnt/daxtest/f152 /mnt/daxtest/f153 /mnt/daxtest/f154 /mnt/daxtest/f155 /mnt/daxtest/f156 /mnt/daxtest/f157 /mnt/daxtest/f158 /mnt/daxtest/f159 -s 100m
+  243  sudo ./iozone -c -G -B -i 0 -i 1 -t 160 -F /mnt/tmpfstest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111 /mnt/daxtest/f112 /mnt/daxtest/f113 /mnt/daxtest/f114 /mnt/daxtest/f115 /mnt/daxtest/f116 /mnt/daxtest/f117 /mnt/daxtest/f118 /mnt/daxtest/f119 /mnt/daxtest/f120 /mnt/daxtest/f121 /mnt/daxtest/f122 /mnt/daxtest/f123 /mnt/daxtest/f124 /mnt/daxtest/f125 /mnt/daxtest/f126 /mnt/daxtest/f127 /mnt/daxtest/f128 /mnt/daxtest/f129 /mnt/daxtest/f130 /mnt/daxtest/f131 /mnt/daxtest/f132 /mnt/daxtest/f133 /mnt/daxtest/f134 /mnt/daxtest/f135 /mnt/daxtest/f136 /mnt/daxtest/f137 /mnt/daxtest/f138 /mnt/daxtest/f139 /mnt/daxtest/f140 /mnt/daxtest/f141 /mnt/daxtest/f142 /mnt/daxtest/f143 /mnt/daxtest/f144 /mnt/daxtest/f145 /mnt/daxtest/f146 /mnt/daxtest/f147 /mnt/daxtest/f148 /mnt/daxtest/f149 /mnt/daxtest/f150 /mnt/daxtest/f151 /mnt/daxtest/f152 /mnt/daxtest/f153 /mnt/daxtest/f154 /mnt/daxtest/f155 /mnt/daxtest/f156 /mnt/daxtest/f157 /mnt/daxtest/f158 /mnt/daxtest/f159 -s 100k
+  244  sudo ./iozone -c -G -B -i 0 -i 1 -t 160 -F /mnt/tmpfstest/f /mnt/daxtest/f1 /mnt/daxtest/f2 /mnt/daxtest/f3 /mnt/daxtest/f4 /mnt/daxtest/f5 /mnt/daxtest/f6 /mnt/daxtest/f7 /mnt/daxtest/f8 /mnt/daxtest/f9 /mnt/daxtest/f10 /mnt/daxtest/f11 /mnt/daxtest/f12 /mnt/daxtest/f13 /mnt/daxtest/f14 /mnt/daxtest/f15 /mnt/daxtest/f16 /mnt/daxtest/f17 /mnt/daxtest/f18 /mnt/daxtest/f19 /mnt/daxtest/f20 /mnt/daxtest/f21 /mnt/daxtest/f22 /mnt/daxtest/f23 /mnt/daxtest/f24 /mnt/daxtest/f25 /mnt/daxtest/f26 /mnt/daxtest/f27 /mnt/daxtest/f28 /mnt/daxtest/f29 /mnt/daxtest/f30 /mnt/daxtest/f31 /mnt/daxtest/f32 /mnt/daxtest/f33 /mnt/daxtest/f34 /mnt/daxtest/f35 /mnt/daxtest/f36 /mnt/daxtest/f37 /mnt/daxtest/f38 /mnt/daxtest/f39 /mnt/daxtest/f40 /mnt/daxtest/f41 /mnt/daxtest/f42 /mnt/daxtest/f43 /mnt/daxtest/f44 /mnt/daxtest/f45 /mnt/daxtest/f46 /mnt/daxtest/f47 /mnt/daxtest/f48 /mnt/daxtest/f49 /mnt/daxtest/f50 /mnt/daxtest/f51 /mnt/daxtest/f52 /mnt/daxtest/f53 /mnt/daxtest/f54 /mnt/daxtest/f55 /mnt/daxtest/f56 /mnt/daxtest/f57 /mnt/daxtest/f58 /mnt/daxtest/f59 /mnt/daxtest/f60 /mnt/daxtest/f61 /mnt/daxtest/f62 /mnt/daxtest/f63 /mnt/daxtest/f64 /mnt/daxtest/f65 /mnt/daxtest/f66 /mnt/daxtest/f67 /mnt/daxtest/f68 /mnt/daxtest/f69 /mnt/daxtest/f70 /mnt/daxtest/f71 /mnt/daxtest/f72 /mnt/daxtest/f73 /mnt/daxtest/f74 /mnt/daxtest/f75 /mnt/daxtest/f76 /mnt/daxtest/f77 /mnt/daxtest/f78 /mnt/daxtest/f79 /mnt/daxtest/f80 /mnt/daxtest/f81 /mnt/daxtest/f82 /mnt/daxtest/f83 /mnt/daxtest/f84 /mnt/daxtest/f85 /mnt/daxtest/f86 /mnt/daxtest/f87 /mnt/daxtest/f88 /mnt/daxtest/f89 /mnt/daxtest/f90 /mnt/daxtest/f91 /mnt/daxtest/f92 /mnt/daxtest/f93 /mnt/daxtest/f94 /mnt/daxtest/f95 /mnt/daxtest/f96 /mnt/daxtest/f97 /mnt/daxtest/f98 /mnt/daxtest/f99 /mnt/daxtest/f100 /mnt/daxtest/f101 /mnt/daxtest/f102 /mnt/daxtest/f103 /mnt/daxtest/f104 /mnt/daxtest/f105 /mnt/daxtest/f106 /mnt/daxtest/f107 /mnt/daxtest/f108 /mnt/daxtest/f109 /mnt/daxtest/f110 /mnt/daxtest/f111 /mnt/daxtest/f112 /mnt/daxtest/f113 /mnt/daxtest/f114 /mnt/daxtest/f115 /mnt/daxtest/f116 /mnt/daxtest/f117 /mnt/daxtest/f118 /mnt/daxtest/f119 /mnt/daxtest/f120 /mnt/daxtest/f121 /mnt/daxtest/f122 /mnt/daxtest/f123 /mnt/daxtest/f124 /mnt/daxtest/f125 /mnt/daxtest/f126 /mnt/daxtest/f127 /mnt/daxtest/f128 /mnt/daxtest/f129 /mnt/daxtest/f130 /mnt/daxtest/f131 /mnt/daxtest/f132 /mnt/daxtest/f133 /mnt/daxtest/f134 /mnt/daxtest/f135 /mnt/daxtest/f136 /mnt/daxtest/f137 /mnt/daxtest/f138 /mnt/daxtest/f139 /mnt/daxtest/f140 /mnt/daxtest/f141 /mnt/daxtest/f142 /mnt/daxtest/f143 /mnt/daxtest/f144 /mnt/daxtest/f145 /mnt/daxtest/f146 /mnt/daxtest/f147 /mnt/daxtest/f148 /mnt/daxtest/f149 /mnt/daxtest/f150 /mnt/daxtest/f151 /mnt/daxtest/f152 /mnt/daxtest/f153 /mnt/daxtest/f154 /mnt/daxtest/f155 /mnt/daxtest/f156 /mnt/daxtest/f157 /mnt/daxtest/f158 /mnt/daxtest/f159 -s 1000k
+  245  ls
+  246  pw
+  247  passwd
+  248  ls
+  249  cd fio/
+  250  ls
+  251  cd /mnt/daxtest
+  252  ls
+  253  ls -lrth
+  254  rm f
+  255  sudo rm f
+  256  pwd
+  257  ls
+  258  ls /mnt/pmem0/
+  259  cd /mnt/pmem0/
+  260  ls
+  261  who
+  262  top
+  263  ls
+  264  ls -lrth
+  265  top
+  266  sudo reboot
+  267  ls
+  268  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=1
+  269  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  270  top
+  271  sudo dd if=/dev/zero of=/mnt/tmpfstest/f bs=4G count=4
+  272  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  273  ls
+  274  top
+  275  uname -a
+  276  iostat -x 1 10
+  277  sudo yum instal sysstat
+  278  sudo yum install sysstat
+  279  iotop
+  280  vi /etc/sysconfig/network-scripts/
+  281  ls /etc/sysconfig/network-scripts/
+  282  ping www.google.com
+  283  who
+  284  ifconfig 
+  285  ls
+  286  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 --filename=/mnt/pmem0/f
+  287  ls
+  288  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=16 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 --filename=/mnt/pmem0/f
+  289  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 --filename=/mnt/pmem0/f
+  290  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/
+  291  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=60 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  292  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/pmem0/f
+  293  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  294  suls
+  295  ls
+  296  sudo dmesg | grep user
+  297  ls
+  298  sudo fio --name=seq-write --ioengine=posixaio --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  299  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  300  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  301  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4m --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  302  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4m --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  303  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  304  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  305  ls
+  306  ls -lrth
+  307  rm f
+  308  ls
+  309  cd bandwidth-1.10.4/
+  310  ls
+  311  make
+  312  vi README.txt 
+  313  ls -lrth
+  314  cd OOC/
+  315  ls
+  316  ls -lrth
+  317  make
+  318  cd ..
+  319  ls
+  320  make linux
+  321  vi Makefile
+  322  sudo make
+  323  make
+  324  nasm
+  325  ls
+  326  make -f Makefile-linux-x86_64 
+  327  make clean
+  328  make -f Makefile-linux-x86_64 
+  329  nasm -f elf64 test64.asm
+  330  bwrap 
+  331  vi Makefile
+  332  make clean
+  333  make -f Makefile-linux bandwidth64
+  334  make -f Makefile-linux-x86_64 bandwidth64
+  335  who
+  336  top
+  337  top
+  338  who
+  339  ls
+  340  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  341  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  342  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  343  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=2 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  344  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=4 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  345  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=8 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  346  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=16 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  347  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=32 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  348  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=48 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  349  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=64 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  350  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  351  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=96 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  352  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=112 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  353  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=128 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  354  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4m --numjobs=128 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  355  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=144 --size=4g cd ..
+  356  ls
+  357  grep -irn "driver1.c
+  358  grep -irn "driver1.c ./*
+  359  grep -irn "driver1.c" ./*
+  360  grep -irn "ert.build" ./*
+  361  ls
+  362  cd Python/
+  363  ls
+  364  grep -irn "build" ./*
+  365  cd ..
+  366  lsl
+  367  grep -irn "build" ./*
+  368  ls
+  369  cd ..
+  370  ls
+  371  mv PM/ PM_Simulation
+  372  ls
+  373  mv PM_Simulation/ PM
+  374  ls
+  375  mkdir PM_Sim
+  376  ls
+  377  cd PM
+  378  cd ..
+  379  ls
+  380  cd PM_Sim/
+  381  ls
+  382  cd ..
+  383  ls
+  384  cp -r fio/ PM_Sim/
+  385  cd PM_Sim/
+  386  ls
+  387  cd fio/
+  388  ls
+  389  ./configure 
+  390  make
+  391  ls
+  392  cd ..
+  393  ls
+  394  cd ..
+  395  ls
+  396  cd PM
+  397  ls
+  398  ls -lrth
+  399  cd ERT
+  400  ls
+  401  cd Drivers/
+  402  ls
+  403  ls -lrth
+  404  ls
+  405  cd ..
+  406  ls
+  407  cd Drivers/
+  408  ls
+  409  gcc -fopenmp
+  410  gcc -fopenmp driver.c
+  411  ls
+  412  ls -lrth
+  413  gcc -fopenmp driver1.c 
+  414  ls
+  415  cp -r ERT ../PM_Sim/
+  416  ls
+  417  cd ..
+  418  ls
+  419  cd ERT
+  420  ls
+  421  cd Results.madonna.lbl.gov.02/
+  422  ls
+  423  cd Run.001/
+  424  ls
+  425  cd FLOPS.001/
+  426  ls
+  427  ./driver1.kernel1 
+  428  ls -lrth
+  429  cd OpenMP.0080/
+  430  ls
+  431  vi sum
+  432  ls
+  433  vi try.001 
+  434  ls
+  435  cat sum
+  436  ls
+  437  cat pre
+  438  cd ~
+  439  ls
+  440  cd ..
+  441  ls
+  442  cd PM
+  443  ls
+  444  cd ERT
+  445  ls
+  446  grep -irn "driver1.c" ./
+  447  ls
+  448  cd Results
+  449  cd ..
+  450  ls
+  451  cd ..
+  452  ls
+  453  cd ..
+  454  ls
+  455  cd PM_Sim/
+  456  ls
+  457  mkdir DRAM_ERT
+  458  ls
+  459  cd DRAM_ERT/
+  460  ls
+  461  vi main.cpp
+  462  g++ -fopenmp -O3 main.cpp 
+  463  ls
+  464  ./a.out 
+  465  g++ -fopenmp -O3 main.cpp 
+  466  ./a.out 
+  467  g++ -fopenmp -O3 main.cpp 
+  468  ./a.out 
+  469  g++ -fopenmp -O3 main.cpp 
+  470  ./a.out 
+  471  g++ -fopenmp -O3 main.cpp 
+  472  ./a.out 
+  473  g++ -fopenmp -O3 main.cpp 
+  474  ./a.out 
+  475  g++ -fopenmp -O3 main.cpp 
+  476  ./a.out 
+  477  g++ -fopenmp -O3 main.cpp 
+  478  ./a.out 
+  479  g++ -fopenmp -O3 main.cpp 
+  480  ./a.out 
+  481  g++ -fopenmp -O3 main.cpp 
+  482  ./a.out 
+  483  g++ -fopenmp -O3 main.cpp 
+  484  ./a.out 
+  485  g++ -fopenmp -O3 main.cpp 
+  486  ./a.out 
+  487  g++ -fopenmp -O3 main.cpp 
+  488  ./a.out 
+  489  g++ -fopenmp -O3 main.cpp 
+  490  ./a.out 
+  491  export KMP_AFFINITY=scatter
+  492  ./a.out 
+  493  export KMP_AFFINITY=scatter
+  494  g++ -fopenmp -O3 main.cpp 
+  495  ./a.out 
+  496  g++ -fopenmp -O3 main.cpp 
+  497  ./a.out 
+  498  g++ -fopenmp -O3 main.cpp 
+  499  ./a.out 
+  500  top
+  501  ls
+  502  g++ -fopenmp -O3 main.cpp 
+  503  ./a.out 
+  504  g++ -fopenmp -O3 main.cpp 
+  505  ./a.out 
+  506  g++ -fopenmp -O3 main.cpp 
+  507  ./a.out 
+  508  ls
+  509  ls -lrth
+  510  ls
+  511  ls -lrth
+  512  g++ -fopenmp -O3 main.cpp 
+  513  ./a.out 
+  514  ls
+  515  cd ..
+  516  ls
+  517  cd ERT
+  518  ls
+  519  grep -irn "-O" ./*
+  520  grep -irn "O" ./*
+  521  grep -rn "O" ./*
+  522  grep -rn "O2" ./*
+  523  grep -rn "O3" ./*
+  524  ls
+  525  cd ..
+  526  ls
+  527  cd DRAM_ERT/
+  528  ls
+  529  gcc -fopenmp -O3 main.cpp 
+  530  ls
+  531  gcc
+  532  gcc main.cpp 
+  533  gcc -fopenmp main.cpp 
+  534  ls
+  535  g++ -fopenmp -O3 main.cpp 
+  536  ./a.out 
+  537  g++ -fopenmp -O3 main.cpp 
+  538  ./a.out 
+  539  g++ -fopenmp -O3 main.cpp 
+  540  ./a.out 
+  541  g++ -fopenmp -O3 main.cpp 
+  542  ./a.out 
+  543  g++ -fopenmp -O3 main.cpp 
+  544  ./a.out 
+  545  g++ -fopenmp -O3 main.cpp 
+  546  ./a.out 
+  547  g++ -fopenmp -O3 main.cpp 
+  548  ./a.out 
+  549  g++ -fopenmp -O3 main.cpp 
+  550  ./a.out 
+  551  g++ -fopenmp -O3 main.cpp 
+  552  ./a.out 
+  553  top
+  554  ls
+  555  export KMP_AFFINITY=scatter
+  556  g++ -fopenmp -O3 main.cpp 
+  557  ./a.out 
+  558  g++ -fopenmp -O3 main.cpp 
+  559  ./a.out 
+  560  g++ -fopenmp -O3 main.cpp 
+  561  ./a.out 
+  562  g++ -fopenmp -O3 main.cpp 
+  563  ./a.out 
+  564  g++ -fopenmp -O3 main.cpp 
+  565  ./a.out 
+  566  g++ -fopenmp -O3 main.cpp 
+  567  ./a.out 
+  568  top
+  569  export OMP_NUM_THREADS=1
+  570  ./a.out 
+  571  g++ -fopenmp -O3 main.cpp 
+  572  ./a.out 
+  573  g++ -fopenmp -O3 main.cpp 
+  574  ./a.out 
+  575  ls
+  576  vi run.sh
+  577  ls
+  578  ./run.sh
+  579  chmod +x run.sh
+  580  ./run.sh 
+  581  ls
+  582  ls -lrth
+  583  g++ -fopenmp -O3 main.cpp 
+  584  ./run.sh 
+  585  touch process.cpp
+  586  g++ -fopenmp -O3 main.cpp 
+  587  g++ process.cpp -o process
+  588  g++ -fopenmp -O3 main.cpp 
+  589  g++ process.cpp -o process
+  590  ./process 
+  591  ls
+  592  ls -lrth
+  593  g++ process.cpp -o process
+  594  ./process 
+  595  g++ process.cpp -o process
+  596  ./process 
+  597  g++ process.cpp -o process
+  598  ./process 
+  599  g++ process.cpp -o process
+  600  ./process 
+  601  g++ process.cpp -o process
+  602  ./process 
+  603  g++ process.cpp -o process
+  604  ./process 
+  605  g++ process.cpp -o process
+  606  ./process 
+  607  g++ process.cpp -o process
+  608  ./process 
+  609  ls
+  610  ./process 
+  611  g++ process.cpp -o process
+  612  ./process 
+  613  ls
+  614  ls -lrth
+  615  g++ process.cpp -o process
+  616  ./process 
+  617  ls
+  618  ls -lrth
+  619  cat res
+  620  g++ process.cpp -o process
+  621  ls
+  622  rm 1*
+  623  rm 2
+  624  rm 4
+  625  rm 8
+  626  rm res
+  627  ls
+  628  nohup ./run.sh &
+  629  ls
+  630  tail -f 1
+  631  top
+  632  kill 11405
+  633  top
+  634  ls
+  635  g++ -fopenmp -O3 main.cpp 
+  636  ls
+  637  nohup ./run.sh &
+  638  ls
+  639  cd ..
+  640  ls
+  641  ls -lrth
+  642  cp DRAM_ERT DAX_ERT
+  643  cp -r DRAM_ERT DAX_ERT
+  644  ls
+  645  cd DAX
+  646  cd DAX_ERT/
+  647  ls
+  648  cd ..
+  649  ls
+  650  top
+  651  ls
+  652  cd DRAM_ERT/
+  653  ls
+  654  mv res res1
+  655  ./run.sh 
+  656  top
+  657  ls
+  658  cat /proc/cpuinfo 
+  659  nohup ./run.sh &
+  660  top
+  661  mv res res2
+  662  nohup ./run.sh &
+  663  mv res res3
+  664  nohup ./run.sh &
+  665  ls
+  666  top
+  667  sudo kill 25516
+  668  ls
+  669  top
+  670  sudo kill 25516
+  671  sudo kill -9 25516
+  672  top
+  673  sudo kill -s 9 25516
+  674  top
+  675  ls
+  676  sudo kill -s 9 25516
+  677  top
+  678  cd ..
+  679  ls
+  680  cd DAX_ERT/
+  681  ls
+  682  ls -lrth
+  683  top
+  684  cd ..
+  685  ls
+  686  cp -r fio memory_fio
+  687  ls
+  688  pwd
+  689  top
+  690  pwd
+  691  ls
+  692  cd memory_fio/
+  693  ls
+  694  pwd
+  695  top
+  696  ls
+  697  cd ..
+  698  ls
+  699  cd DRAM_ERT/
+  700  ls
+  701  ./run.sh &
+  702  g++ process.cpp -o process
+  703  ls
+  704  top
+  705  ls
+  706  ls -lrth
+  707  cat res
+  708  g++ -fopenmp -O3 main.cpp 
+  709  ./run.sh 
+  710  g++ -fopenmp -O3 main.cpp 
+  711  ./run.sh 
+  712  top
+  713  ls
+  714  cd DRAM_ERT/
+  715  ls
+  716  mv res res4
+  717  top
+  718  nohup ./run.sh &
+  719  top
+  720  ls
+  721  cd ..
+  722  ls
+  723  rm -rf DAX_ERT/
+  724  cp -r DRAM_ERT/ DAX_ERT
+  725  ls
+  726  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  727  ls
+  728  cd DAX_ERT/
+  729  ls
+  730  g++ -fopenmp -O3 main.cpp 
+  731  ./a.out 
+  732  sudo ./a.out 
+  733  g++ -fopenmp -O3 main.cpp 
+  734  sudo ./a.out 
+  735  sudo fallocate -l 14G /mnt/daxtest/f
+  736  g++ -fopenmp -O3 main.cpp 
+  737  sudo ./a.out 
+  738  sudo fallocate -l 16G /mnt/daxtest/f
+  739  g++ -fopenmp -O3 main.cpp 
+  740  sudo ./a.out 
+  741  sudo fallocate -l 15G /mnt/daxtest/f
+  742  g++ -fopenmp -O3 main.cpp 
+  743  sudo ./a.out 
+  744  g++ -fopenmp -O3 main.cpp 
+  745  sudo ./a.out 
+  746  g++ -fopenmp -O3 main.cpp 
+  747  sudo ./a.out 
+  748  ls
+  749  vi run.sh 
+  750  sudo ./run.sh 
+  751  top
+  752  ls
+  753  vi run.sh 
+  754  ls
+  755  rm 1*
+  756  ./run.sh 
+  757  export OMP_NUM_THREADS=1
+  758  ./run.sh 
+  759  g++ -fopenmp -O3 main.cpp 
+  760  ./a.out 
+  761  export OMP_NUM_THREADS=1
+  762  ./a.out 
+  763  sudo ./a.out 
+  764  ./run.sh 
+  765  ls
+  766  ./run.sh 
+  767  ls
+  768  ls -lrth
+  769  ./run.sh 
+  770  ls
+  771  ./run.sh 
+  772  ls -lrth
+  773  g++ -fopenmp -O3 main.cpp 
+  774  ls
+  775  sed -i "s/num_threads($last)/num_threads($i)/g"  main.cpp
+  776  ls
+  777  ls -lrth
+  778  sed -i "s/num_threads($last)/num_threads($i)/g"  main.cpp
+  779  sed -i "s/num_threads(1)/num_threads(2)/g"  main.cpp
+  780  ./run.s
+  781  ./run.sh 
+  782  g++ -fopenmp -O3 main.cpp 
+  783  ./a.out > 1
+  784  sudo ./a.out > 1
+  785  ./run.sh 
+  786  g++ -fopenmp -O3 main.cpp 
+  787  sudo ls
+  788  sudo ./run.sh 
+  789  g++ process.cpp -o process
+  790  g++ -fopenmp -O3 main.cpp 
+  791  sudo run.sh
+  792  sudo ./run.sh 
+  793  sudo ./run.sh
+  794  g++ -fopenmp -O3 main.cpp 
+  795  sudo ./run.s
+  796  sudo ./run.sh 
+  797  vi res
+  798  mv res res5
+  799  cd ..
+  800  ls
+  801  cd DRAM_ERT/
+  802  ls
+  803  mv res res5
+  804  nohup ./run.sh &
+  805  cd ..
+  806  lks
+  807  ls
+  808  cd DAX_ERT/
+  809  ls
+  810  ls -lrth
+  811  sudo ./run.sh 
+  812  g++ -fopenmp -O3 main.cpp 
+  813  sudo ./run.sh 
+  814  ls
+  815  ls -lrth
+  816  vi res
+  817  ls
+  818  g++ -fopenmp -O3 main.cpp 
+  819  mv res res4
+  820  sudo
+  821  sudo ./run.sh 
+  822  g++ -fopenmp -O3 main.cpp 
+  823  cat /proc/meminfo | grep Huge
+  824  g++ -fopenmp -O3 main.cpp 
+  825  sudo ./run.sh 
+  826  ls
+  827  cd /mnt/
+  828  ls
+  829  ls -lrth
+  830  cd daxtest/
+  831  ls
+  832  cat l
+  833  ls -lrth
+  834  ls
+  835  cd ~
+  836  ls
+  837  history > log
+  838  vi log 
+  839  vi log
+  840  top
+  841  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  842  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=32 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/tmpfstest/f
+  843  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=32 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  844  ls
+  845  cd /mnt/
+  846  ls
+  847  rm daxtest/
+  848  rm daxtest/ -rf
+  849  sudo rm daxtest/ -rf
+  850  sudo mkdir daxts
+  851  sudo mkfs.ext4 /dev/pmem2 
+  852  sudo mount -o dax /dev/pmem2 /mnt/daxts/
+  853  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=32 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxts/f
+  854  ls
+  855  cd DAX_ERT/
+  856  ls
+  857  mv res res3
+  858  g++ -fopenmp -O3 main.cpp 
+  859  ls
+  860  sudo ./run.sh
+  861  g++ -fopenmp -O3 main.cpp 
+  862  mv res res2
+  863  sudo ./run.sh
+  864  g++ -fopenmp -O3 main.cpp 
+  865  ls
+  866  ./configure 
+  867  make
+  868  ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  869  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  870  fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  871  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=80 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  872  sudo rm /mnt/daxtest/f 
+  873  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=32 --size=4g --iodepth=1 --runtime=20 --time_based --end_fsync=1 --filename=/mnt/daxtest/f
+  874  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=32 --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxtest/f
+  875  ls
+  876  make
+  877  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=32 --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f
+  878  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=32 --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f
+  879  make
+  880  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=1 --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f
+  881  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --numjobs=2 --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f
+  882  make
+  883  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=1
+  884  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=2
+  885  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=4
+  886  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=8
+  887  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=8
+  888  sudo fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=16
+  889  make
+  890  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=8
+  891  make clean
+  892  make
+  893  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=8
+  894  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=14g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=32
+  895  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=32
+  896  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=16
+  897  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=8
+  898  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=4
+  899  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=2
+  900  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=1
+  901  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=48
+  902  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=64
+  903  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=1g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=80
+  904  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=128m --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=96
+  905  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=128m --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=112
+  906  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=128m --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=128
+  907  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=128m --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=144
+  908  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=128m --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=160
+  909  make
+  910  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=1
+  911  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=2
+  912  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=4
+  913  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=8
+  914  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=16
+  915  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=20 --time_based --filename=/mnt/daxts/f --numjobs=32
+  916  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=32
+  917  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=48
+  918  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=64
+  919  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=4g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=80
+  920  top
+  921  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=80
+  922  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=79
+  923  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=78
+  924  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=96
+  925  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=112
+  926  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=128
+  927  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=1
+  928  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=144
+  929  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --iodepth=1 --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=160
+  930  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=160
+  931  sudo ./fio --name=seq-write --ioengine=dax --rw=write --bs=4k --size=8g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=160
+  932  ./fio
+  933  sudo ./fio --name=seq-write --ioengine=dax --rw=write --bs=4k --size=8g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=160 -thread
+  934  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=160 -thread
+  935  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=80 -thread
+  936  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=8g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=64 -thread
+  937  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=16g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=64 -thread
+  938  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=15g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=64 -thread
+  939  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=15g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=80 -thread
+  940  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=15g --runtime=60 --time_based --filename=/mnt/daxts/f --numjobs=112 -thread
+  941  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=15g --runtime=60 --filename=/mnt/daxts/f --numjobs=112 -thread
+  942  sudo ./fio --name=seq-write --ioengine=mmap --rw=write --bs=4k --size=15g --filename=/mnt/daxts/f --numjobs=112 -thread
+  943  ls
+  944  grep -irn "mmap" ./*
+  945  make clean
+  946  ls
+  947  grep -irn "mmap" ./*
+  948  grep -irn "mmap" ./* >log
+  949  grep -irn "mmap(" ./* 
+  950  rm log
+  951  grep -irn "mmap(" ./* 
+  952  grep -irn "munmap(" ./* 
+  953  grep -irn "fmd->mmap_ptr" ./*
+  954  grep -irn "msync(" ./*
+  955  top
+  956  ls
+  957  who
+  958  top
+  959  ls
+  960  top
+  961  uname
+  962  uname -a
+  963  exit
+  964  ls
+  965  top
+  966  who
+  967  exit
+  968  ls
+  969  who
+  970  top
+  971  ls
+  972  exit
+  973  ls
+  974  top
+  975  who
+  976  top
+  977  dmesg | grep mem
+  978  dmesg 
+  979  dmesg | grep BIOS
+  980  ls
+  981  sudo dd if=/dev/zero of=/mnt/daxtest/f bs=4G count=4
+  982  ls
+  983  cd /mnt/
+  984  ls
+  985  sudo dd if=/dev/zero of=/mnt/daxts/f bs=4G count=4
+  986  ls
+  987  ls -lrth
+  988  ls /dev/pmem2
+  989  ls
+  990  who
+  991  top
+  992  who
+  993  ls
+  994  sudo vi /etc/default/grub 
+  995  sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+  996  sudo ls /boot/efi
+  997  sudo ls /boot/efi/EFI/
+  998  sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+  999  sudo reboot
+ 1000  top
+ 1001  ls
+ 1002  cd ~
+ 1003  ls
+ 1004  cd /mnt/
+ 1005  ls
+ 1006  rm tmpfstest/ -rf
+ 1007  df 
+ 1008  ls
+ 1009  sudo rm tmpfstest/
+ 1010  sudo rm -rf tmpfstest/
+ 1011  sudo rm -rf tfs/
+ 1012  sudo rm -rf tempfstest/
+ 1013  ls
+ 1014  sudo mkfs.ext4 /dev/pmem2 
+ 1015  sudo mount -o dax /dev/pmem2 /mnt/daxts/
+ 1016  ls
+ 1017  cd ~
+ 1018  ls
+ 1019  cd PM_Sim/
+ 1020  ls
+ 1021  cd DRAM_ERT/
+ 1022  ls
+ 1023  sudo ./run.sh
+ 1024  ls
+ 1025  ls -lrth
+ 1026  cat res
+ 1027  ls
+ 1028  cd ..
+ 1029  ls
+ 1030  cd DAX_ERT/
+ 1031  ls
+ 1032  g++ -fopenmp -O3 main.cpp 
+ 1033  ls
+ 1034  ./run.sh 
+ 1035  sudo ./run.sh 
+ 1036  ls
+ 1037  ls -lrth
+ 1038  vi run.sh 
+ 1039  g++ -fopenmp -O3 main.cpp 
+ 1040  ls
+ 1041  ls -lrth
+ 1042  ./run.sh 
+ 1043  sudo ./run.sh 
+ 1044  ls
+ 1045  ls -lrth
+ 1046  cat res
+ 1047  ls /mnt/daxts/
+ 1048  sudo touch /mnt/daxts/f
+ 1049  ls
+ 1050  g++ -fopenmp -O3 main.cpp 
+ 1051  sudo ./run.sh 
+ 1052  sudo fallocate -l 16G /mnt/daxts/f
+ 1053  ls
+ 1054  g++ -fopenmp -O3 main.cpp 
+ 1055  ./run.sh 
+ 1056  sudo ./run.sh 
+ 1057  g++ -fopenmp -O3 main.cpp 
+ 1058  sudo ./run.sh 
+ 1059  ls
+ 1060  cd ..
+ 1061  ls
+ 1062  cp -r DAX_ERT DAX_VecAdd_block
+ 1063  cp -r DAX_ERT DAX_VecAdd_cyclic
+ 1064  cd DAX_VecAdd_block/
+ 1065  ls
+ 1066  g++ -fopenmp -O3 main.cpp 
+ 1067  ls
+ 1068  ./run.sh 
+ 1069  sudo ./run.sh 
+ 1070  ls
+ 1071  sudo ./a.out 
+ 1072  g++ -fopenmp -O3 main.cpp 
+ 1073  ls
+ 1074  ./a.out 
+ 1075  sudo ./a.out 
+ 1076  g++ -fopenmp -O3 main.cpp 
+ 1077  sudo ./a.out 
+ 1078  g++ -fopenmp -O3 main.cpp 
+ 1079  sudo ./a.out 
+ 1080  g++ -fopenmp -O3 main.cpp 
+ 1081  sudo ./a.out 
+ 1082  g++ -fopenmp -O3 main.cpp 
+ 1083  sudo ./a.out 
+ 1084  g++ -fopenmp -O3 main.cpp 
+ 1085  g++ process.cpp -o process
+ 1086  ./run.s
+ 1087  ./run.sh 
+ 1088  g++ -fopenmp -O3 main.cpp 
+ 1089  g++ process.cpp -o process
+ 1090  ./run.sh 
+ 1091  sudo ./run.sh 
+ 1092  ls -lrth
+ 1093  g++ process.cpp -o process
+ 1094  g++ -fopenmp -O3 main.cpp 
+ 1095  sudo ./a.out 
+ 1096  sudo ./run.sh 
+ 1097  cat run.sh 
+ 1098  ls
+ 1099  g++ process.cpp -o process
+ 1100  ./process 
+ 1101  g++ process.cpp -o process
+ 1102  ./process 
+ 1103  g++ process.cpp -o process
+ 1104  ./process 
+ 1105  g++ process.cpp -o process
+ 1106  ./process 
+ 1107  g++ process.cpp -o process
+ 1108  ./process 
+ 1109  ls /boot/efi/EFI
+ 1110  sudo ls /boot/efi/EFI
+ 1111  sudo grubby --default-kernel
+ 1112  ls /boot/
+ 1113  sudo grubby --set-default vmlinuz-5.9.13
+ 1114  sudo grubby --set-default /boot/vmlinuz-5.9.13
+ 1115  sudo grubby 
+ 1116  sudo grubby -h
+ 1117  history > log
