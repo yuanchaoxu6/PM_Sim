@@ -24,7 +24,7 @@ int main()
         double avg = 0.0;
         for (int j = 10; j < v.size(); j++)
             avg+=v[j];
-        fprintf(out,"%lf\n", avg/20.0);
+        fprintf(out, "%lf\n", avg/(v.size() - 10));
         if (i<=16) i=i*2;
         else i=i+16;
     }

@@ -71,18 +71,30 @@ int main(int argc, char *argv[]) {
 		uint64_t TSIZE = 1<<30;
         TSIZE *=16;
 		uint64_t PSIZE = TSIZE / nprocs;
-		for (int i = 0; i < blocksize; ++i)
+		for (int i = 0; i < 512; ++i)
 			B[i] = i*i*1.0/rand();
 		
+		int fd;
+ 		if ( (fd = open("/mnt/tmpfsts/f", O_RDWR|O_CREAT, 0666)) < 0){
+  			printf("open file wrong!\n");
+  			exit(1);
+ 		}
+		void * start;
+		if ((start=mmap(NULL, TSIZE, PROT_READ|PROT_WRITE, MAP_SHARED, fd,0))== MAP_FAILED)
+		{
+			printf("mmap error!\n");
+			exit(1);
+		}
+		double * buf = (double *)start;
 		
 		
-		double * buf = (double *)malloc(PSIZE);
+		//double * buf = (double *)malloc(PSIZE);
 
 		if (buf == NULL) {
 				fprintf(stderr, "Out of memory!\n");
 				return -1;
 		}
-#pragma omp parallel private(id) num_threads(1)
+#pragma omp parallel private(id) num_threads(160)
 //#pragma omp parallel private(id) 
 		{
 				id = omp_get_thread_num();
@@ -135,7 +147,9 @@ int main(int argc, char *argv[]) {
 					it++; 
 				} // working set - nsize
 		} // parallel region
-		free(buf);
+		//free(buf);
+		munmap(buf, TSIZE);
+		close(fd);
 		printf("\n");
 		printf("META_DATA\n");
 		printf("FLOPS          %d\n", ERT_FLOP);
