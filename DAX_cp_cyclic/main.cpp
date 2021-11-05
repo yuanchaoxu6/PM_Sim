@@ -13,19 +13,6 @@
 #define ERT_WORKING_SET_MIN 1
 #define GBUNIT (1024 * 1024 * 1024)
 
-#define REP2(S)        S ;        S
-#define REP4(S)   REP2(S);   REP2(S)
-#define REP8(S)   REP4(S);   REP4(S) 
-#define REP16(S)  REP8(S);   REP8(S) 
-#define REP32(S)  REP16(S);  REP16(S)
-#define REP64(S)  REP32(S);  REP32(S)
-#define REP128(S) REP64(S);  REP64(S)
-#define REP256(S) REP128(S); REP128(S)
-#define REP512(S) REP256(S); REP256(S)
-
-#define KERNEL1(a,b,c)   ((a) = (a)*(b))
-#define KERNEL2(a,b,c)   ((a) = (a)*(b) +c)
-
 #define blocksize 512
 
 void initialize(uint64_t nsize,
@@ -52,7 +39,7 @@ void kernel(uint64_t nsize,
   for (j = 0; j < nsize/blocksize; j++) {
 	  for (i = 0; i < blocksize; ++i)
 	  	A[j*nthreads*blocksize+i] = B[i];
-	  //msync(&A[j*nthreads*blocksize], blocksize*sizeof(double), MS_SYNC);
+	  msync(&A[j*nthreads*blocksize], blocksize*sizeof(double), MS_SYNC);
   }
 }
 double getTime()
@@ -93,7 +80,7 @@ int main(int argc, char *argv[]) {
 				fprintf(stderr, "Out of memory!\n");
 				return -1;
 		}
-#pragma omp parallel private(id) num_threads(4)
+#pragma omp parallel private(id) num_threads(1)
 //#pragma omp parallel private(id) 
 		{
 				id = omp_get_thread_num();
@@ -116,7 +103,7 @@ int main(int argc, char *argv[]) {
 
 				int it = 0;
 				n = nsize; t = 1;
-				while (it < 20) { // working set - nsize
+				while (it < 100) { // working set - nsize
 						
 				#pragma omp barrier
 

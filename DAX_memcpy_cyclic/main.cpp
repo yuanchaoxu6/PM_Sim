@@ -117,7 +117,7 @@ int main(int argc, char *argv[]) {
 
 				int it = 0;
 				n = nsize; t = 1;
-				while (it < 20) { // working set - nsize
+				while (it < 100) { // working set - nsize
 						
 				#pragma omp barrier
 
