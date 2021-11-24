@@ -1,0 +1,64 @@
+round 0
+TID: 1 BW:           1.147
+TID: 0 BW:           1.147
+round 1
+TID: 1 BW:           1.146
+TID: 0 BW:           1.146
+round 2
+TID: 1 BW:           1.147
+TID: 0 BW:           1.147
+round 3
+TID: 0 BW:           1.147
+round 4
+TID: 1 BW:           1.147
+TID: 1 BW:           1.146
+TID: 0 BW:           1.146
+round 5
+TID: 1 BW:           1.148
+TID: 0 BW:           1.148
+round 6
+TID: 0 BW:           1.146
+round 7
+TID: 1 BW:           1.146
+TID: 0 BW:           1.146
+round 8
+TID: 1 BW:           1.146
+TID: 1 BW:           1.145
+TID: 0 BW:           1.146
+round 9
+TID: 1 BW:           1.146
+TID: 0 BW:           1.146
+round 10
+TID: 1 BW:           1.144
+TID: 0 BW:           1.145
+round 11
+TID: 0 BW:           1.146
+round 12
+TID: 1 BW:           1.146
+TID: 0 BW:           1.147
+round 13
+TID: 1 BW:           1.147
+TID: 0 BW:           1.147
+round 14
+TID: 1 BW:           1.147
+TID: 1 BW:           1.151
+TID: 0 BW:           1.151
+round 15
+TID: 0 BW:           1.147
+round 16
+TID: 1 BW:           1.147
+TID: 0 BW:           1.146
+round 17
+TID: 1 BW:           1.146
+TID: 0 BW:           1.147
+round 18
+TID: 1 BW:           1.147
+TID: 1 BW:           1.146
+TID: 0 BW:           1.146
+round 19
+TID: 1 BW:           1.147
+TID: 0 BW:           1.147
+
+META_DATA
+FLOPS          2
+OPENMP_THREADS 2

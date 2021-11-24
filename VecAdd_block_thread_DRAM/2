@@ -1,0 +1,44 @@
+TID: 1 BW:           0.890
+TID: 0 BW:           1.543
+TID: 1 BW:           1.000
+TID: 0 BW:           1.224
+TID: 1 BW:           1.038
+TID: 0 BW:           1.149
+TID: 1 BW:           1.056
+TID: 0 BW:           1.129
+TID: 1 BW:           1.067
+TID: 0 BW:           1.183
+TID: 0 BW:           1.061
+TID: 1 BW:           1.129
+TID: 0 BW:           1.008
+TID: 1 BW:           1.192
+TID: 0 BW:           1.072
+TID: 1 BW:           1.110
+TID: 0 BW:           1.063
+TID: 1 BW:           1.117
+TID: 0 BW:           1.062
+TID: 1 BW:           1.121
+TID: 0 BW:           1.071
+TID: 1 BW:           1.109
+TID: 0 BW:           1.071
+TID: 1 BW:           1.109
+TID: 0 BW:           1.071
+TID: 1 BW:           1.109
+TID: 0 BW:           1.071
+TID: 1 BW:           1.109
+TID: 0 BW:           1.072
+TID: 1 BW:           1.110
+TID: 0 BW:           1.071
+TID: 1 BW:           1.108
+TID: 0 BW:           1.071
+TID: 1 BW:           1.109
+TID: 0 BW:           1.071
+TID: 1 BW:           1.109
+TID: 0 BW:           1.057
+TID: 1 BW:           1.131
+TID: 0 BW:           1.072
+TID: 1 BW:           1.109
+
+META_DATA
+FLOPS          2
+OPENMP_THREADS 2

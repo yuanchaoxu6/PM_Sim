@@ -12,6 +12,9 @@
 #define ERT_WORKING_SET_MIN 1
 #define GBUNIT (1024 * 1024 * 1024)
 
+#define MAP_HUGE_2MB    (21 << MAP_HUGE_SHIFT)
+#define MAP_HUGE_1GB    (30 << MAP_HUGE_SHIFT)
+
 #define KERNEL1(a,b,c)   ((a) = (a)*(b))
 #define KERNEL2(a,b,c)   ((a) = (a)*(b) +c)
 
@@ -40,7 +43,7 @@ void kernel(uint64_t nsize,
   for (i = 0; i < nsize; ++i) {
       double beta = 0.8;
       //KERNEL2(beta,A[i],alpha);
-      A[i] = beta*A[i]+alpha
+      A[i] = beta*A[i]+alpha;
     }
     alpha = alpha * (1 - 1e-8);
   }
@@ -64,18 +67,20 @@ int main(int argc, char *argv[]) {
 		uint64_t PSIZE = TSIZE / nprocs;
 
 		int fd;
- 		if ( (fd = open("/mnt/tmpfsts/f", O_RDWR, 0666)) < 0){
+ 		if ( (fd = open("/mnt/daxtest/f", O_RDWR, 0666)) < 0){
   			printf("open file wrong!\n");
   			exit(1);
  		}
 		void * start;
+		//
 		if ((start=mmap(NULL, TSIZE, PROT_READ|PROT_WRITE, MAP_SHARED, fd,0))== MAP_FAILED)
 		{
 			printf("mmap error!\n");
 			exit(1);
 		}
-		//double * buf = (double *)malloc(TSIZE);//start;
-		double * buf = (double *)start;
+		double * buf = (double *)malloc(TSIZE);//start;
+		//double * buf = (double *)start;
+		
 		if (buf == NULL) {
 				fprintf(stderr, "Out of memory!\n");
 				return -1;
@@ -103,7 +108,7 @@ int main(int argc, char *argv[]) {
 
 				int it = 0;
 				n = nsize; t = 1;
-				while (it < 100) { // working set - nsize
+				while (it < 20) { // working set - nsize
 						
 				#pragma omp barrier
 

@@ -1,0 +1,104 @@
+round 0
+TID: 0 BW:           1.042
+round 1
+TID: 3 BW:           1.159
+TID: 1 BW:           1.159
+TID: 2 BW:           1.161
+TID: 0 BW:           1.175
+round 2
+TID: 2 BW:           1.182
+TID: 1 BW:           1.308
+TID: 3 BW:           1.322
+TID: 0 BW:           1.178
+round 3
+TID: 3 BW:           1.191
+TID: 1 BW:           1.293
+TID: 2 BW:           1.294
+TID: 3 BW:           1.169
+TID: 0 BW:           1.170
+round 4
+TID: 1 BW:           1.281
+TID: 2 BW:           1.281
+TID: 0 BW:           1.168
+round 5
+TID: 3 BW:           1.169
+TID: 1 BW:           1.280
+TID: 2 BW:           1.280
+TID: 0 BW:           1.169
+round 6
+TID: 3 BW:           1.170
+TID: 2 BW:           1.279
+TID: 1 BW:           1.280
+TID: 0 BW:           1.169
+round 7
+TID: 3 BW:           1.170
+TID: 1 BW:           1.280
+TID: 2 BW:           1.281
+TID: 0 BW:           1.170
+round 8
+TID: 3 BW:           1.171
+TID: 1 BW:           1.282
+TID: 2 BW:           1.282
+TID: 0 BW:           1.168
+round 9
+TID: 3 BW:           1.169
+TID: 2 BW:           1.278
+TID: 1 BW:           1.279
+TID: 0 BW:           1.169
+round 10
+TID: 3 BW:           1.170
+TID: 2 BW:           1.280
+TID: 1 BW:           1.280
+TID: 0 BW:           1.170
+round 11
+TID: 3 BW:           1.171
+TID: 1 BW:           1.281
+TID: 2 BW:           1.281
+TID: 0 BW:           1.170
+round 12
+TID: 3 BW:           1.170
+TID: 1 BW:           1.279
+TID: 2 BW:           1.279
+TID: 0 BW:           1.170
+round 13
+TID: 3 BW:           1.170
+TID: 1 BW:           1.281
+TID: 2 BW:           1.281
+TID: 0 BW:           1.169
+round 14
+TID: 3 BW:           1.169
+TID: 2 BW:           1.279
+TID: 1 BW:           1.279
+TID: 0 BW:           1.169
+round 15
+TID: 3 BW:           1.170
+TID: 1 BW:           1.280
+TID: 2 BW:           1.280
+TID: 3 BW:           1.169
+TID: 0 BW:           1.170
+round 16
+TID: 1 BW:           1.279
+TID: 2 BW:           1.279
+TID: 0 BW:           1.169
+round 17
+TID: 3 BW:           1.170
+TID: 1 BW:           1.279
+TID: 2 BW:           1.280
+TID: 0 BW:           1.168
+round 18
+TID: 3 BW:           1.169
+TID: 1 BW:           1.278
+TID: 2 BW:           1.278
+TID: 0 BW:           1.169
+round 19
+TID: 3 BW:           1.170
+TID: 2 BW:           1.281
+TID: 1 BW:           1.281
+TID: 0 BW:           1.169
+TID: 3 BW:           1.169
+TID: 1 BW:           1.279
+TID: 2 BW:           1.279
+
+META_DATA
+FLOPS          2
+OPENMP_THREADS 4
