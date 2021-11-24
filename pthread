@@ -1,0 +1,151 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <sys/time.h>
+#include <inttypes.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <pthread.h>
+//#include "external/llvm_openmp/include/omp.h"
+//#include "omp.h"
+#include <unistd.h>
+#define ERT_FLOP 2 
+#define ERT_TRIALS_MIN 1
+#define ERT_WORKING_SET_MIN 1
+#define GBUNIT (1024 * 1024 * 1024)
+
+#define MAP_HUGE_2MB    (21 << MAP_HUGE_SHIFT)
+#define MAP_HUGE_1GB    (30 << MAP_HUGE_SHIFT)
+
+#define KERNEL1(a,b,c)   ((a) = (a)*(b))
+#define KERNEL2(a,b,c)   ((a) = (a)*(b) +c)
+
+double * buf;
+uint64_t nsize;
+
+
+void initialize(uint64_t nsize,
+                double* __restrict__ A,
+                double value)
+{
+  uint64_t i;
+  for (i = 0; i < nsize; ++i) {
+    A[i] = value;
+  }
+}
+
+pthread_barrier_t mybarrier;
+
+void* kernel(void * input)
+{
+
+  uint64_t l = (uint64_t) input;
+  double alpha = 0.5;
+  uint64_t i, j;
+  for (j = 0; j < 20; ++j) {
+  for (i = l; i < l+nsize; ++i) {
+      double beta = 0.8;
+      //if (i%10000==0) printf("%lu\n",i);
+      //KERNEL2(beta,A[i],alpha);
+      buf[i] = beta*buf[i]*alpha;
+    }
+    alpha = alpha * (1 - 1e-8);
+    msync(&buf[l], nsize*sizeof(double), MS_SYNC);
+  }
+  return NULL;
+}
+double getTime()
+{
+		double time;
+  struct timeval current_time;
+  gettimeofday(&current_time, NULL);
+  time = current_time.tv_sec*1000000+current_time.tv_usec;
+  return time;
+}
+
+
+
+int main(int argc, char *argv[]) {
+
+		int nprocs = 1;
+		int nthreads = 1;
+
+		uint64_t TSIZE = 1<<30;
+        TSIZE *=16;
+		uint64_t PSIZE = TSIZE / nprocs;
+
+		int fd;
+  ///mnt/daxtest/f
+ 		if ( (fd = open("/mnt/daxtest/f", O_RDWR, 0666)) < 0){
+  			printf("open file wrong!\n");
+  			exit(1);
+ 		}
+		void * start;
+
+		if ((start=mmap(NULL, TSIZE, PROT_READ|PROT_WRITE, MAP_SHARED, fd,0))== MAP_FAILED)
+	  {
+			printf("mmap error!\n");
+			exit(1);
+		}
+
+		//buf = (double *)malloc(TSIZE);//start;
+		buf = (double *)start;
+		
+		if (buf == NULL) {
+				fprintf(stderr, "Out of memory!\n");
+				return -1;
+		}
+    printf("before create threads");
+    nthreads = 112;
+    pthread_t flush_thread[224];
+  pthread_barrier_init(&mybarrier, NULL, nthreads);
+
+//#pragma omp parallel private(id) num_threads(160)
+//#pragma omp parallel private(id)
+				//id = omp_get_thread_num();
+				//nthreads = omp_get_num_threads();
+    				nsize = PSIZE / nthreads;
+				nsize = nsize & (~(64-1));
+				nsize = nsize / sizeof(double);
+    	double startTime, endTime;
+      startTime=getTime();
+      for (int id = 0; id < nthreads; ++id) {
+        uint64_t nid =  nsize * id;
+        pthread_create(&flush_thread[id], NULL, kernel, (void*)nid);
+      }
+      //pthread_barrier_init(&mybarrier, NULL, nthreads);
+
+          //error = pthread_create(&tidp, NULL, create, (void *)b);
+      printf("before join\n");
+      for (int id = 0; id <nthreads; ++id)
+        pthread_join(flush_thread[id],NULL);
+    printf("before get time\n");
+      endTime=getTime();
+printf("after get time\n");
+				uint64_t n;
+				uint64_t t;
+
+				n = nsize; t = 1;
+
+				double seconds = (double)(endTime - startTime)/1000000;
+										uint64_t working_set_size = n * nthreads * 20;
+										uint64_t total_bytes = t * working_set_size * 8 * 2;
+										// nsize; trials; microseconds; bytes; single thread bandwidth; total bandwidth
+										//printf("%12" PRIu64 " %12" PRIu64 " %15.3lf %12" PRIu64 " %12" PRIu64 "\n",
+										//       working_set_size * bytes_per_elem,
+										//       t,
+										//       seconds,
+										//       total_bytes,
+										//       total_flops);
+                                printf("BW: %15.3lf Total data: %15.3lfG \n",total_bytes*1.0/seconds/1024/1024/1024, total_bytes*1.0/1024/1024/1024);
+
+
+    munmap(start,TSIZE);
+    close(fd);
+		printf("\n");
+		printf("META_DATA\n");
+		printf("FLOPS          %d\n", ERT_FLOP);
+		printf("OPENMP_THREADS %d\n", nthreads);
+
+		return 0;
+}
