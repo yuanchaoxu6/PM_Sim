@@ -1,0 +1,1 @@
+cmd_/home/yuanchao/PM_Sim/OptaneStudy/src/kernel/repfs.ko := ld -r -m elf_x86_64 --build-id=sha1  -T ./scripts/module-common.lds -o /home/yuanchao/PM_Sim/OptaneStudy/src/kernel/repfs.ko /home/yuanchao/PM_Sim/OptaneStudy/src/kernel/repfs.o /home/yuanchao/PM_Sim/OptaneStudy/src/kernel/repfs.mod.o;  true
