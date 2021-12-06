@@ -94,7 +94,7 @@ static int reportfs_fill_super(struct super_block *sb, void *data, int silent) {
 
   sbi->s_bdev = sb->s_bdev;
 
-  dax_dev = fs_dax_get_by_host(sb->s_bdev->bd_disk->disk_name);
+  dax_dev = dax_get_by_host(sb->s_bdev->bd_disk->disk_name);
   if (!dax_dev) {
     pr_err("Couldn't retrieve DAX device.\n");
     return -EINVAL;
