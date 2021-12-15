@@ -5,7 +5,7 @@ import sys
 import datetime
 import json
 import math
-from google.cloud import datastore
+#from google.cloud import datastore
 
 # Parse output and upload to Google Cloud Datastore 
 # ./parse_bw.py <TAG> <DURATION> <UPLOAD_DB?>
@@ -21,13 +21,13 @@ if len(sys.argv) >= 3:
 else:
     timer_stop = 5
 
-if len(sys.argv) == 4:
-    updatedb = 1
-    datastore_client = datastore.Client()
-    with open('config.json') as f:
-        config = json.load(f)
-else:
-    updatedb = 0
+#if len(sys.argv) == 4:
+#    updatedb = 1
+#    datastore_client = datastore.Client()
+#    with open('config.json') as f:
+#        config = json.load(f)
+#else:
+updatedb = 0
 
 if len(sys.argv) < 2 or len(sys.argv) > 4:
     print('{0} [output.txt] <duration> <upload_db>'.format(sys.argv[0]))

@@ -8,11 +8,12 @@ cd ../kernel
 rm -f ../kernel/output.txt > /dev/null
 cp -f memaccess.c memaccess.c.bak
 
-access_array=( 64 128 192 256 512 1024 2048 4096 8192 16384 )
+access_array=( 64 )
 #parallel_array=( 1 2 4 8 )
-parallel_array=( 1 2 3 4 6 8 )
-stride_array=( 0 64 128 192 256 512 1024 4096 16384 )
-op_array=( 3 )
+#parallel_array=( 1 2 3 4 6 8 10 12 14 16 18 20)
+parallel_array=(10 12 14 16 18 20)
+stride_array=( 0 64)
+op_array=( 0 1 2 3 )
 hostname=`hostname -s`
 delay=0
 TAG=${TAG:-`date +%Y%m%d%H%M%S`}

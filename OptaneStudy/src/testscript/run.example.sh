@@ -3,7 +3,7 @@
 # Sample run script
 
 # Disable CPU Prefetching
-wrmsr -a 0x1a4 0xf
+#wrmsr -a 0x1a4 0xf
 
 export GOOGLE_APPLICATION_CREDENTIALS=dbuser.json
 export AEPWatch=1
@@ -13,7 +13,7 @@ export PATH=$PATH:`pwd`/subtests/bin
 testapp=./subtests/30_stridebw.sh
 repdev=`mount | grep ReportFS | awk {'print \$1'}`
 testdev=`mount | grep LatencyFS | awk {'print \$1'}`
-runtime=20
+runtime=1
 
 if [ -z $repdev ] || [ -z $testdev ]; then
 	echo "Please run mount.sh first"
@@ -33,11 +33,11 @@ for i in `seq $runtime`; do
   read
 
   $testapp $repdev $testdev
-  ./parse_bw.py output.txt $runtime 1 > $TAG.summary.txt
+  ./parse_bw.py output.txt $runtime 0 > $TAG.summary.txt
   mv output.txt ./$TAG.output.txt
 
 done
 
-wrmsr -a 0x1a4 0x0
+#wrmsr -a 0x1a4 0x0
 
-aeprelease
+#aeprelease

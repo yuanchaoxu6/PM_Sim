@@ -1,0 +1,1 @@
+cmd_/home/yuanchao/PM_Sim/OptaneStudy/src/kernel/Module.symvers := sed 's/ko$$/o/' /home/yuanchao/PM_Sim/OptaneStudy/src/kernel/modules.order | scripts/mod/modpost     -o /home/yuanchao/PM_Sim/OptaneStudy/src/kernel/Module.symvers -e -i Module.symvers   -T -

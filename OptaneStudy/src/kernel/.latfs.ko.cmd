@@ -1,0 +1,1 @@
+cmd_/home/yuanchao/PM_Sim/OptaneStudy/src/kernel/latfs.ko := ld -r -m elf_x86_64 --build-id=sha1  -T ./scripts/module-common.lds -o /home/yuanchao/PM_Sim/OptaneStudy/src/kernel/latfs.ko /home/yuanchao/PM_Sim/OptaneStudy/src/kernel/latfs.o /home/yuanchao/PM_Sim/OptaneStudy/src/kernel/latfs.mod.o;  true

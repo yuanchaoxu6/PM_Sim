@@ -1,0 +1,554 @@
+[ 5933.541189] LATTester_START: pmemMachine0-3-repeatr1-64-64-10-0-0
+[ 5941.250351] Random buffer created.
+[ 5941.264195] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 5941.264217] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 5941.264223] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 5941.264249] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 5941.264262] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 5941.264270] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 5941.264276] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 5941.264282] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 5941.264292] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 5941.264294] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 5942.322764] 1	40576 (10)
+[ 5943.345831] 2	39424 (10)
+[ 5944.369834] 3	39520 (10)
+[ 5945.393833] 4	39520 (10)
+[ 5946.417770] 5	39552 (10)
+[ 5946.435212] LATTester_END: pmemMachine0-3-repeatr1-64-64-10-0-0
+[ 5960.503857] LATTester_START: pmemMachine0-3-repeatr1-64-64-10-0-1
+[ 5968.215575] Random buffer created.
+[ 5968.229690] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 5968.229698] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 5968.229762] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 5968.229769] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 5968.229776] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 5968.229782] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 5968.229789] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 5968.229795] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 5968.229804] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 5968.229842] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 5969.385874] 1	37760 (28)
+[ 5970.417819] 2	34368 (28)
+[ 5971.441822] 3	33888 (28)
+[ 5972.465821] 4	33792 (28)
+[ 5973.489839] 5	33824 (28)
+[ 5973.539613] LATTester_END: pmemMachine0-3-repeatr1-64-64-10-0-1
+[ 5987.602091] LATTester_START: pmemMachine0-3-repeatr1-64-64-10-0-2
+[ 5995.325063] Random buffer created.
+[ 5995.338206] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 5995.338210] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 5995.338254] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 5995.338257] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 5995.338265] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 5995.338272] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 5995.338279] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 5995.338286] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 5995.338293] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 5995.338595] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 5996.425905] 1	16288 (30)
+[ 5997.489821] 2	16000 (30)
+[ 5998.513832] 3	15456 (30)
+[ 5999.537840] 4	15648 (30)
+[ 6000.561825] 5	15360 (30)
+[ 6000.622650] LATTester_END: pmemMachine0-3-repeatr1-64-64-10-0-2
+[ 6014.682114] LATTester_START: pmemMachine0-3-repeatr1-64-64-10-0-3
+[ 6022.416962] Random buffer created.
+[ 6022.431329] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6022.431338] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6022.431345] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6022.431352] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6022.431395] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6022.431397] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6022.431407] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6022.431413] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6022.431422] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6022.431455] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6023.817877] 1	22496 (28)
+[ 6024.881823] 2	17344 (28)
+[ 6025.905842] 3	16896 (28)
+[ 6026.929822] 4	16704 (28)
+[ 6027.953841] 5	16928 (28)
+[ 6028.034818] LATTester_END: pmemMachine0-3-repeatr1-64-64-10-0-3
+[ 6042.097791] LATTester_START: pmemMachine0-3-repeatr1-64-64-12-0-0
+[ 6049.838978] Random buffer created.
+[ 6049.850183] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6049.850188] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6049.850195] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6049.850242] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6049.850249] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6049.850255] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6049.850261] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6049.850270] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6049.850276] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6049.850282] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6049.850291] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6049.850333] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6050.921939] 1	40768 (20)
+[ 6051.953845] 2	39648 (20)
+[ 6052.977825] 3	39200 (20)
+[ 6054.001828] 4	39232 (20)
+[ 6055.025827] 5	39264 (20)
+[ 6055.047604] LATTester_END: pmemMachine0-3-repeatr1-64-64-12-0-0
+[ 6069.110934] LATTester_START: pmemMachine0-3-repeatr1-64-64-12-0-1
+[ 6076.842222] Random buffer created.
+[ 6076.854561] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6076.854627] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6076.854634] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6076.854637] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6076.854651] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6076.854657] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6076.854663] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6076.854670] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6076.854676] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6076.854682] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6076.854688] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6076.854754] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6078.322769] 1	47744 (12)
+[ 6079.345789] 2	34144 (12)
+[ 6080.369766] 3	33888 (12)
+[ 6081.393836] 4	33760 (12)
+[ 6082.417835] 5	34240 (12)
+[ 6082.465659] LATTester_END: pmemMachine0-3-repeatr1-64-64-12-0-1
+[ 6096.530676] LATTester_START: pmemMachine0-3-repeatr1-64-64-12-0-2
+[ 6104.248089] Random buffer created.
+[ 6104.260864] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6104.260926] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6104.260959] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6104.260965] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6104.260971] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6104.260977] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6104.260983] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6104.260989] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6104.260992] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6104.260998] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6104.261005] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6104.261010] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6105.465890] 1	18080 (28)
+[ 6106.481843] 2	15488 (28)
+[ 6107.505827] 3	15584 (28)
+[ 6108.529825] 4	15488 (28)
+[ 6109.553826] 5	15520 (28)
+[ 6109.651312] LATTester_END: pmemMachine0-3-repeatr1-64-64-12-0-2
+[ 6123.716845] LATTester_START: pmemMachine0-3-repeatr1-64-64-12-0-3
+[ 6131.439468] Random buffer created.
+[ 6131.453332] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6131.453338] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6131.453422] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6131.453429] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6131.453435] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6131.453441] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6131.453448] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6131.453454] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6131.453460] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6131.453469] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6131.453475] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6131.453481] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6132.681877] 1	20384 (28)
+[ 6133.745825] 2	18944 (28)
+[ 6134.769826] 3	17632 (28)
+[ 6135.793827] 4	17696 (28)
+[ 6136.817827] 5	18112 (28)
+[ 6136.938437] LATTester_END: pmemMachine0-3-repeatr1-64-64-12-0-3
+[ 6151.003815] LATTester_START: pmemMachine0-3-repeatr1-64-64-14-0-0
+[ 6158.737695] Random buffer created.
+[ 6158.750804] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6158.750815] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6158.750877] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6158.750884] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6158.750887] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6158.750889] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6158.750934] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6158.750941] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6158.750947] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6158.750953] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6158.750959] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6158.750966] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6158.750972] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6158.750977] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6159.897898] 1	43520 (28)
+[ 6160.945830] 2	40000 (28)
+[ 6161.969829] 3	39136 (28)
+[ 6162.993827] 4	39136 (28)
+[ 6164.017860] 5	39168 (28)
+[ 6164.055113] LATTester_END: pmemMachine0-3-repeatr1-64-64-14-0-0
+[ 6178.126053] LATTester_START: pmemMachine0-3-repeatr1-64-64-14-0-1
+[ 6185.837322] Random buffer created.
+[ 6185.849368] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6185.849438] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6185.849444] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6185.849452] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6185.849459] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6185.849464] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6185.849472] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6185.849479] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6185.849485] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6185.849491] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6185.849497] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6185.849504] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6185.849511] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6185.849585] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6187.004493] 1	37600 (20)
+[ 6188.017788] 2	33664 (20)
+[ 6189.041829] 3	33760 (20)
+[ 6190.065846] 4	33984 (20)
+[ 6191.089833] 5	33536 (20)
+[ 6191.160907] LATTester_END: pmemMachine0-3-repeatr1-64-64-14-0-1
+[ 6205.225870] LATTester_START: pmemMachine0-3-repeatr1-64-64-14-0-2
+[ 6212.944949] Random buffer created.
+[ 6212.955327] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6212.955376] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6212.955401] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6212.955417] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6212.955423] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6212.955429] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6212.955440] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6212.955447] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6212.955453] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6212.955459] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6212.955464] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6212.955471] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6212.955477] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6212.955482] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6214.002920] 1	15680 (14)
+[ 6215.025902] 2	15680 (14)
+[ 6216.049897] 3	15680 (14)
+[ 6217.073831] 4	15360 (14)
+[ 6218.097914] 5	15584 (14)
+[ 6218.166857] LATTester_END: pmemMachine0-3-repeatr1-64-64-14-0-2
+[ 6232.238135] LATTester_START: pmemMachine0-3-repeatr1-64-64-14-0-3
+[ 6239.966058] Random buffer created.
+[ 6239.975914] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6239.975986] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6239.976004] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6239.976010] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6239.976017] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6239.976023] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6239.976025] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6239.976033] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6239.976039] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6239.976046] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6239.976052] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6239.976058] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6239.976061] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6239.976063] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6241.009898] 1	18336 (31)
+[ 6242.033858] 2	18176 (31)
+[ 6243.057831] 3	18368 (31)
+[ 6244.081852] 4	17952 (31)
+[ 6245.105850] 5	17984 (31)
+[ 6245.256650] LATTester_END: pmemMachine0-3-repeatr1-64-64-14-0-3
+[ 6259.320865] LATTester_START: pmemMachine0-3-repeatr1-64-64-16-0-0
+[ 6267.050878] Random buffer created.
+[ 6267.060966] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6267.060985] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6267.061036] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6267.061039] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6267.061041] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6267.061044] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6267.061047] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6267.061056] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6267.061062] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6267.061071] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6267.061077] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6267.061083] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6267.061090] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6267.061096] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6267.061102] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6267.061213] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6268.399616] 1	50688 (32)
+[ 6269.425860] 2	39264 (32)
+[ 6270.449835] 3	39040 (32)
+[ 6271.473830] 4	39040 (32)
+[ 6272.497849] 5	39040 (32)
+[ 6272.565617] LATTester_END: pmemMachine0-3-repeatr1-64-64-16-0-0
+[ 6286.631308] LATTester_START: pmemMachine0-3-repeatr1-64-64-16-0-1
+[ 6289.959365] perf: interrupt took too long (2619 > 2500), lowering kernel.perf_event_max_sample_rate to 76000
+[ 6294.367734] Random buffer created.
+[ 6294.379891] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6294.379899] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6294.379940] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6294.379964] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6294.379966] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6294.379981] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6294.379987] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6294.379993] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6294.379999] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6294.380006] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6294.380058] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6294.380060] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6294.380062] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6294.380065] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6294.380068] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6294.380072] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6295.473893] 1	34816 (28)
+[ 6296.497833] 2	33408 (28)
+[ 6297.521831] 3	33888 (28)
+[ 6298.545832] 4	33760 (28)
+[ 6299.569831] 5	33216 (28)
+[ 6299.639673] LATTester_END: pmemMachine0-3-repeatr1-64-64-16-0-1
+[ 6313.704241] LATTester_START: pmemMachine0-3-repeatr1-64-64-16-0-2
+[ 6321.438625] Random buffer created.
+[ 6321.450263] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6321.450267] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6321.450274] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6321.450322] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6321.450329] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6321.450331] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6321.450333] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6321.450342] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6321.450348] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6321.450363] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6321.450365] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6321.450371] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6321.450378] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6321.450386] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6321.450392] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6321.450417] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6322.601006] 1	17376 (31)
+[ 6323.633855] 2	15776 (31)
+[ 6324.657863] 3	15744 (31)
+[ 6325.681834] 4	15488 (31)
+[ 6326.705837] 5	15808 (31)
+[ 6326.865023] LATTester_END: pmemMachine0-3-repeatr1-64-64-16-0-2
+[ 6340.929946] LATTester_START: pmemMachine0-3-repeatr1-64-64-16-0-3
+[ 6348.648991] Random buffer created.
+[ 6348.656376] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6348.656380] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6348.656447] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6348.656468] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6348.656474] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6348.656480] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6348.656486] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6348.656492] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6348.656498] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6348.656504] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6348.656510] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6348.656516] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6348.656522] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6348.656528] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6348.656534] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6348.656539] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6349.700333] 1	18848 (32)
+[ 6350.705850] 2	17536 (32)
+[ 6351.729833] 3	18912 (32)
+[ 6352.753867] 4	18368 (32)
+[ 6353.777836] 5	18560 (32)
+[ 6353.922830] LATTester_END: pmemMachine0-3-repeatr1-64-64-16-0-3
+[ 6367.994974] LATTester_START: pmemMachine0-3-repeatr1-64-64-18-0-0
+[ 6375.733222] Random buffer created.
+[ 6375.741178] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6375.741183] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6375.741208] {16}Working set begin: 000000006a037386 end: 00000000f53136ea, size=64, stride=64, delay=0, batch=524288
+[ 6375.741246] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6375.741249] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6375.741261] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6375.741273] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6375.741276] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6375.741283] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6375.741289] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6375.741295] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6375.741301] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6375.741308] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6375.741314] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6375.741323] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6375.741329] {17}Working set begin: 00000000f53136ea end: 00000000db8834ee, size=64, stride=64, delay=0, batch=524288
+[ 6375.741336] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6375.741397] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6376.900071] 1	43744 (32)
+[ 6377.905840] 2	38304 (32)
+[ 6378.929839] 3	39072 (32)
+[ 6379.953843] 4	39040 (32)
+[ 6380.977852] 5	39008 (32)
+[ 6381.041251] LATTester_END: pmemMachine0-3-repeatr1-64-64-18-0-0
+[ 6395.106994] LATTester_START: pmemMachine0-3-repeatr1-64-64-18-0-1
+[ 6399.409239] perf: interrupt took too long (3345 > 3273), lowering kernel.perf_event_max_sample_rate to 59000
+[ 6402.828603] Random buffer created.
+[ 6402.836336] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6402.836343] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6402.836390] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6402.836412] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6402.836414] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6402.836417] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6402.836424] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6402.836431] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6402.836438] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6402.836444] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6402.836450] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6402.836468] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6402.836475] {17}Working set begin: 00000000f53136ea end: 00000000db8834ee, size=64, stride=64, delay=0, batch=524288
+[ 6402.836481] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6402.836487] {16}Working set begin: 000000006a037386 end: 00000000f53136ea, size=64, stride=64, delay=0, batch=524288
+[ 6402.836494] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6402.836500] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6402.836548] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6403.953899] 1	36288 (37)
+[ 6404.977836] 2	33792 (37)
+[ 6406.001857] 3	33472 (37)
+[ 6407.025838] 4	32864 (37)
+[ 6408.049840] 5	32864 (37)
+[ 6408.153327] LATTester_END: pmemMachine0-3-repeatr1-64-64-18-0-1
+[ 6422.221565] LATTester_START: pmemMachine0-3-repeatr1-64-64-18-0-2
+[ 6429.946275] Random buffer created.
+[ 6429.953442] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6429.953512] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6429.953542] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6429.953548] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6429.953561] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6429.953564] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6429.953570] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6429.953577] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6429.953583] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6429.953585] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6429.953591] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6429.953597] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6429.953603] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6429.953612] {16}Working set begin: 000000006a037386 end: 00000000f53136ea, size=64, stride=64, delay=0, batch=524288
+[ 6429.953618] {17}Working set begin: 00000000f53136ea end: 00000000db8834ee, size=64, stride=64, delay=0, batch=524288
+[ 6429.953624] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6429.953631] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6429.953635] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6431.004079] 1	15648 (26)
+[ 6432.049840] 2	16384 (26)
+[ 6433.073850] 3	15904 (26)
+[ 6434.097845] 4	15552 (26)
+[ 6435.121838] 5	15584 (26)
+[ 6435.223484] LATTester_END: pmemMachine0-3-repeatr1-64-64-18-0-2
+[ 6449.291886] LATTester_START: pmemMachine0-3-repeatr1-64-64-18-0-3
+[ 6457.051900] Random buffer created.
+[ 6457.059653] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6457.059658] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6457.059701] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6457.059722] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6457.059724] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6457.059734] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6457.059741] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6457.059747] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6457.059758] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6457.059763] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6457.059767] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6457.059773] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6457.059780] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6457.059785] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6457.059792] {16}Working set begin: 000000006a037386 end: 00000000f53136ea, size=64, stride=64, delay=0, batch=524288
+[ 6457.059798] {17}Working set begin: 00000000f53136ea end: 00000000db8834ee, size=64, stride=64, delay=0, batch=524288
+[ 6457.059804] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6457.059949] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6458.225912] 1	20768 (38)
+[ 6459.249838] 2	17600 (38)
+[ 6460.273854] 3	18624 (38)
+[ 6461.297841] 4	18400 (38)
+[ 6462.321871] 5	18240 (38)
+[ 6462.508696] LATTester_END: pmemMachine0-3-repeatr1-64-64-18-0-3
+[ 6476.580242] LATTester_START: pmemMachine0-3-repeatr1-64-64-20-0-0
+[ 6484.334021] Random buffer created.
+[ 6484.341899] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6484.341940] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6484.341947] {18}Working set begin: 00000000db8834ee end: 000000000ddce766, size=64, stride=64, delay=0, batch=524288
+[ 6484.341969] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6484.341992] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6484.341995] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6484.342004] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6484.342010] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6484.342022] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6484.342029] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6484.342030] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6484.342036] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6484.342042] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6484.342048] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6484.342057] {17}Working set begin: 00000000f53136ea end: 00000000db8834ee, size=64, stride=64, delay=0, batch=524288
+[ 6484.342064] {16}Working set begin: 000000006a037386 end: 00000000f53136ea, size=64, stride=64, delay=0, batch=524288
+[ 6484.342070] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6484.342077] {19}Working set begin: 000000000ddce766 end: 00000000566196e1, size=64, stride=64, delay=0, batch=524288
+[ 6484.342083] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6484.342188] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6485.361868] 1	38400 (20)
+[ 6486.385839] 2	39008 (20)
+[ 6487.409842] 3	39008 (20)
+[ 6488.433841] 4	38944 (20)
+[ 6489.457839] 5	38944 (20)
+[ 6489.550619] LATTester_END: pmemMachine0-3-repeatr1-64-64-20-0-0
+[ 6503.620922] LATTester_START: pmemMachine0-3-repeatr1-64-64-20-0-1
+[ 6511.366357] Random buffer created.
+[ 6511.374323] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6511.374330] {18}Working set begin: 00000000db8834ee end: 000000000ddce766, size=64, stride=64, delay=0, batch=524288
+[ 6511.374352] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6511.374380] {17}Working set begin: 00000000f53136ea end: 00000000db8834ee, size=64, stride=64, delay=0, batch=524288
+[ 6511.374383] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6511.374386] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6511.374398] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6511.374405] {16}Working set begin: 000000006a037386 end: 00000000f53136ea, size=64, stride=64, delay=0, batch=524288
+[ 6511.374412] {19}Working set begin: 000000000ddce766 end: 00000000566196e1, size=64, stride=64, delay=0, batch=524288
+[ 6511.374418] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6511.374430] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6511.374436] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6511.374441] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6511.374447] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6511.374454] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6511.374459] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6511.374465] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6511.374471] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6511.374477] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6511.374482] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6512.497867] 1	35200 (20)
+[ 6513.521841] 2	33472 (20)
+[ 6514.545844] 3	33344 (20)
+[ 6515.569840] 4	33504 (20)
+[ 6516.593841] 5	33344 (20)
+[ 6516.706050] LATTester_END: pmemMachine0-3-repeatr1-64-64-20-0-1
+[ 6530.778498] LATTester_START: pmemMachine0-3-repeatr1-64-64-20-0-2
+[ 6538.539271] Random buffer created.
+[ 6538.546598] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6538.546607] {18}Working set begin: 00000000db8834ee end: 000000000ddce766, size=64, stride=64, delay=0, batch=524288
+[ 6538.546620] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6538.546646] {17}Working set begin: 00000000f53136ea end: 00000000db8834ee, size=64, stride=64, delay=0, batch=524288
+[ 6538.546649] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6538.546651] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6538.546654] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6538.546663] {16}Working set begin: 000000006a037386 end: 00000000f53136ea, size=64, stride=64, delay=0, batch=524288
+[ 6538.546669] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6538.546703] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6538.546709] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6538.546715] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6538.546722] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6538.546728] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6538.546733] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6538.546740] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6538.546745] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6538.546752] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6538.546755] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6538.546762] {19}Working set begin: 000000000ddce766 end: 00000000566196e1, size=64, stride=64, delay=0, batch=524288
+[ 6539.569875] 1	15456 (20)
+[ 6540.593855] 2	16096 (20)
+[ 6541.617855] 3	15840 (20)
+[ 6542.641842] 4	15840 (20)
+[ 6543.665841] 5	15872 (20)
+[ 6543.889098] LATTester_END: pmemMachine0-3-repeatr1-64-64-20-0-2
+[ 6557.971528] LATTester_START: pmemMachine0-3-repeatr1-64-64-20-0-3
+[ 6565.758899] Random buffer created.
+[ 6565.766135] {5}Working set begin: 000000001755b417 end: 0000000019350a93, size=64, stride=64, delay=0, batch=524288
+[ 6565.766191] {0}Working set begin: 000000003c00d8d4 end: 000000003fcaaeed, size=64, stride=64, delay=0, batch=524288
+[ 6565.766242] {11}Working set begin: 00000000c44fe49c end: 00000000e807d47c, size=64, stride=64, delay=0, batch=524288
+[ 6565.766249] {13}Working set begin: 000000007aa68c0c end: 000000008e17b27f, size=64, stride=64, delay=0, batch=524288
+[ 6565.766262] {2}Working set begin: 0000000052f9cd26 end: 0000000044d5930f, size=64, stride=64, delay=0, batch=524288
+[ 6565.766265] {19}Working set begin: 000000000ddce766 end: 00000000566196e1, size=64, stride=64, delay=0, batch=524288
+[ 6565.766271] {3}Working set begin: 0000000044d5930f end: 00000000a16faa6b, size=64, stride=64, delay=0, batch=524288
+[ 6565.766277] {9}Working set begin: 000000007cb6d521 end: 00000000a9dd88cf, size=64, stride=64, delay=0, batch=524288
+[ 6565.766340] {1}Working set begin: 000000003fcaaeed end: 0000000052f9cd26, size=64, stride=64, delay=0, batch=524288
+[ 6565.766346] {14}Working set begin: 000000008e17b27f end: 00000000fadc99ca, size=64, stride=64, delay=0, batch=524288
+[ 6565.766348] {10}Working set begin: 00000000a9dd88cf end: 00000000c44fe49c, size=64, stride=64, delay=0, batch=524288
+[ 6565.766351] {7}Working set begin: 00000000f518e3fb end: 000000007fbdd097, size=64, stride=64, delay=0, batch=524288
+[ 6565.766354] {8}Working set begin: 000000007fbdd097 end: 000000007cb6d521, size=64, stride=64, delay=0, batch=524288
+[ 6565.766356] {4}Working set begin: 00000000a16faa6b end: 000000001755b417, size=64, stride=64, delay=0, batch=524288
+[ 6565.766359] {12}Working set begin: 00000000e807d47c end: 000000007aa68c0c, size=64, stride=64, delay=0, batch=524288
+[ 6565.766368] {15}Working set begin: 00000000fadc99ca end: 000000006a037386, size=64, stride=64, delay=0, batch=524288
+[ 6565.766370] {16}Working set begin: 000000006a037386 end: 00000000f53136ea, size=64, stride=64, delay=0, batch=524288
+[ 6565.766372] {17}Working set begin: 00000000f53136ea end: 00000000db8834ee, size=64, stride=64, delay=0, batch=524288
+[ 6565.766378] {18}Working set begin: 00000000db8834ee end: 000000000ddce766, size=64, stride=64, delay=0, batch=524288
+[ 6565.766381] {6}Working set begin: 0000000019350a93 end: 00000000f518e3fb, size=64, stride=64, delay=0, batch=524288
+[ 6566.769873] 1	17824 (20)
+[ 6567.793840] 2	18976 (20)
+[ 6568.817841] 3	18208 (20)
+[ 6569.841842] 4	18976 (20)
+[ 6570.865841] 5	18848 (20)
+[ 6571.115207] LATTester_END: pmemMachine0-3-repeatr1-64-64-20-0-3

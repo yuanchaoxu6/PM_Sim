@@ -135,6 +135,7 @@ int latencyfs_print_help(struct seq_file *seq, void *v)
 
 inline void latencyfs_cleanup(struct latency_sbi *sbi)
 {
+	vfree(sbi->virt_addr);
 	kfree(sbi->workers);
 	kfree(sbi->timing);
 	kfree(sbi->ctx);
@@ -414,8 +415,8 @@ static int latencyfs_fill_super(struct super_block *sb, void *data, int silent)
 		pr_err("direct_access failed\n");
 		return -EINVAL;
 	}
-
-	sbi->virt_addr = virt_addr;
+	
+	sbi->virt_addr = vmalloc(PAGE_SIZE*11010048);
 	sbi->phys_addr = pfn_t_to_pfn(__pfn_t) << PAGE_SHIFT;
 	sbi->initsize = size;
 
